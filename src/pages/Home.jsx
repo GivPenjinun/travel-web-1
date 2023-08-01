@@ -9,12 +9,13 @@ import video4 from "../assets/video4.mp4";
 import video5 from "../assets/video5.mp4";
 
 function Home() {
-  const [toggleVideo, setToggleVideo] = useState();
-  const [currentCase, setCurrentCase] = useState(0);
-  const [vid, setVideo] = useState(video);
-
-  function currentSelector(e) {
-    setCurrentCase(Number(e.target.value));
+  function handlerVidBtn(btn) {
+    let OldButton = document.querySelector(".vid-btn.active");
+    OldButton.classList.remove("active");
+    let button = document.getElementById(`${btn}`);
+    button.classList.add("active");
+    let src = button.getAttribute("data-src");
+    document.querySelector("#video-slider").src = src;
   }
 
   return (
@@ -31,20 +32,35 @@ function Home() {
 
         <div className="controls">
           <button
-            value={0}
-            className={currentCase === 0 ? "vid-btn active" : "vid-btn"}
+            className="vid-btn active"
+            id="vid1"
             data-src={video}
-            onClick={currentSelector}
+            onClick={() => handlerVidBtn("vid1")}
           ></button>
           <button
-            value={1}
-            className={currentCase === 1 ? "vid-btn active" : "vid-btn"}
+            className="vid-btn"
+            id="vid2"
             data-src={video2}
-            onClick={currentSelector}
+            onClick={() => handlerVidBtn("vid2")}
           ></button>
-          <button className="vid-btn" data-src={video3}></button>
-          <button className="vid-btn" data-src={video4}></button>
-          <button className="vid-btn" data-src={video5}></button>
+          <button
+            className="vid-btn"
+            id="vid3"
+            data-src={video3}
+            onClick={() => handlerVidBtn("vid3")}
+          ></button>
+          <button
+            className="vid-btn"
+            id="vid4"
+            data-src={video4}
+            onClick={() => handlerVidBtn("vid4")}
+          ></button>
+          <button
+            className="vid-btn"
+            id="vid5"
+            data-src={video5}
+            onClick={() => handlerVidBtn("vid5")}
+          ></button>
         </div>
 
         <div className="video-container">
