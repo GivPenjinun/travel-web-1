@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home.jsx";
-
+import Header from "./pages/Header";
+import Book from "./pages/Book.jsx";
+import Packages from "./pages/Packages.jsx";
 import "./App.css";
 
 function App() {
@@ -9,11 +11,10 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-        </Routes>
-      </Router>
+      <Header />
+      <Home />
+      <Book />
+      <Packages />
     </div>
   );
 }

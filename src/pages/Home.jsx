@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./Home.css";
 import { Link, useNavigate } from "react-router-dom";
-import { Header } from "./Header";
+
 import video from "../assets/video.mp4";
 import video2 from "../assets/video2.mp4";
 import video3 from "../assets/video3.mp4";
@@ -20,7 +20,6 @@ function Home() {
 
   return (
     <>
-      <Header />
       <section className="home" id="home">
         <div className="content">
           <h3>adventure is waiting...</h3>

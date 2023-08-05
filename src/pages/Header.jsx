@@ -5,7 +5,7 @@ import { BsFillPersonFill } from "react-icons/bs";
 import { ImCross } from "react-icons/im";
 import { AiOutlineBars } from "react-icons/ai";
 
-export function Header() {
+function Header() {
   const [isBtnToggle, setBtnToggle] = useState(true);
   const [barToggle, setBarToggle] = useState("search-bar-container");
   const [logInToggle, setLogInToggle] = useState("login-form-container");
@@ -47,13 +47,13 @@ export function Header() {
           <span>T</span>ravel
         </a>
         <nav className={menuToggle}>
-          <a href="#Home">Home</a>
-          <a href="#Book">Book</a>
-          <a href="#Packages">Packages</a>
-          <a href="#Services">Services</a>
-          <a href="#Gallery">Gallery</a>
-          <a href="#Review">Review</a>
-          <a href="#Contact">Contact</a>
+          <a href="#home">Home</a>
+          <a href="#book">Book</a>
+          <a href="#packages">Packages</a>
+          <a href="#services">Services</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#review">Review</a>
+          <a href="#contact">Contact</a>
         </nav>
 
         <button className="icons" onClick={handlerBtn}>
@@ -100,3 +100,5 @@ export function Header() {
     </>
   );
 }
+
+export default Header;
