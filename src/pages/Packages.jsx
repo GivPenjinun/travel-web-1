@@ -1,6 +1,8 @@
 import "./Packages.css";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { ImLocation2 } from "react-icons/im";
+import { AddStar } from "./AddStars";
+import { location } from "../data/location.js";
 
 function Packages() {
   return (
@@ -17,24 +19,30 @@ function Packages() {
           <span>S</span>
         </h1>
         <div className="box-container">
-          <div className="box">
-            <img src="" alt="" />
-            <div className="content">
-              <h3>
-                <ImLocation2 className="icon" />
-                mumbai
-              </h3>
-              <p>Lorem</p>
-              <div className="stars">
-                <AiFillStar className="icon" />
-                <AiOutlineStar className="icon" />
-              </div>
-              <div className="price">
-                $90.00<span className="discount">$120.00</span>
-              </div>
-              <button className="btn">Book Now</button>
-            </div>
-          </div>
+          {location.map((item, index) => {
+            return (
+              <>
+                <div className="box" key={index}>
+                  <img src={item.image} alt="travel place" />
+                  <div className="content">
+                    <h3>
+                      <ImLocation2 className="icon" />
+                      {item.title}
+                    </h3>
+                    <p>Lorem</p>
+                    <div className="stars icon">
+                      <AddStar number={item.rating} />
+                    </div>
+                    <div className="price">
+                      ${item.discountPrice}
+                      <span>${item.price}</span>
+                    </div>
+                    <button className="btn">Book Now</button>
+                  </div>
+                </div>
+              </>
+            );
+          })}
         </div>
       </section>
     </>
