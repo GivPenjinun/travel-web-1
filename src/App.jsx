@@ -5,6 +5,7 @@ import Header from "./pages/Header";
 import Book from "./pages/Book.jsx";
 import Packages from "./pages/Packages.jsx";
 import Service from "./pages/Service.jsx";
+import Gallery from "./pages/Gallery.jsx";
 import "./App.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Book />
       <Packages />
       <Service />
+      <Gallery />
     </div>
   );
 }
