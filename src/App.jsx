@@ -6,6 +6,10 @@ import Book from "./pages/Book.jsx";
 import Packages from "./pages/Packages.jsx";
 import Service from "./pages/Service.jsx";
 import Gallery from "./pages/Gallery.jsx";
+import Review from "./pages/Review.jsx";
+import Contact from "./pages/Contact.jsx";
+import Footer from "./pages/Footer.jsx";
+import BrandSlider from "./pages/BrandSlider.jsx";
 import "./App.css";
 
 function App() {
@@ -19,6 +23,10 @@ function App() {
       <Packages />
       <Service />
       <Gallery />
+      <Review />
+      <Contact />
+      <BrandSlider />
+      <Footer />
     </div>
   );
 }
