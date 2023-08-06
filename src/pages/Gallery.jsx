@@ -4,7 +4,7 @@ import { location } from "../data/location.js";
 function Gallery() {
   return (
     <>
-      <scetion className="gallery" id="gallery">
+      <section className="gallery" id="gallery">
         <h1 className="heading">
           <span>G</span>
           <span>A</span>
@@ -32,7 +32,7 @@ function Gallery() {
             );
           })}
         </div>
-      </scetion>
+      </section>
     </>
   );
 }
