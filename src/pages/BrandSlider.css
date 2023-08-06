@@ -1,0 +1,10 @@
+.brandSlider {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.brandSlider img {
+  width: 200px;
+  height: 200px;
+}
