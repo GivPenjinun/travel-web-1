@@ -4,6 +4,8 @@ import { AddStar } from "./AddStars";
 import travel4 from "../assets/travel4.jpg";
 import travel5 from "../assets/travel4.jpg";
 import travel6 from "../assets/travel4.jpg";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 function Review() {
   return (
@@ -18,22 +20,21 @@ function Review() {
           <span>W</span>
         </h1>
         <div className="review-slider">
-          <div className="wrapper">
-            <div className="slider">
-              <div className="box">
-                <img src={travel4} />
-                <h3>John</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                  tenetur dignissimos necessitatibus qui magni eveniet, aliquam
-                  optio aut placeat a, ab deleniti corporis velit enim eius
-                  quibusdam modi obcaecati. Dolores!
-                </p>
-                <div className="stars icon">
-                  <AddStar number={5} />
-                </div>
-              </div>
-            </div>
+          <div className="slider">
+            {reviews.map((item, index) => {
+              return (
+                <>
+                  <div className="box">
+                    <img src={item.image} />
+                    <h3>{item.name}</h3>
+                    <p>{item.details}</p>
+                    <div className="stars icon">
+                      <AddStar number={item.rating} />
+                    </div>
+                  </div>
+                </>
+              );
+            })}
           </div>
         </div>
       </section>

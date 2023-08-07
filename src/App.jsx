@@ -9,7 +9,7 @@ import Gallery from "./pages/Gallery.jsx";
 import Review from "./pages/Review.jsx";
 import Contact from "./pages/Contact.jsx";
 import Footer from "./pages/Footer.jsx";
-import BrandSlider from "./pages/BrandSlider.jsx";
+import Slider from "./pages/Slider.jsx";
 import "./App.css";
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
       <Gallery />
       <Review />
       <Contact />
-      <BrandSlider />
+      <Slider />
       <Footer />
     </div>
   );
