@@ -1,3 +1,7 @@
+import travel4 from "../assets/travel4.jpg";
+import travel5 from "../assets/travel5.jpg";
+import travel6 from "../assets/travel6.jpg";
+
 export const location = [
   {
     id: 1,
@@ -7,7 +11,7 @@ export const location = [
     discountPrice: 90,
     price: 120,
     rating: 5,
-    image: "https://cdn.pic.in.th/file/picinth/travel1.jpeg",
+    image: "https://drive.google.com/uc?id=1x6ZJMkowbkq9jzGAGbo9hmRQEVRWnLLP",
   },
   {
     id: 2,
@@ -17,7 +21,7 @@ export const location = [
     discountPrice: 100,
     price: 140,
     rating: 4,
-    image: "https://cdn.pic.in.th/file/picinth/travel2.jpeg",
+    image: "https://drive.google.com/uc?id=1J5BNY3Kc7dyR0K06ffgHd_WifUNcFdES",
   },
   {
     id: 3,
@@ -27,6 +31,6 @@ export const location = [
     discountPrice: 150,
     price: 250,
     rating: 3,
-    image: "https://cdn.pic.in.th/file/picinth/travel3.jpeg",
+    image: "https://drive.google.com/uc?id=1fQ2ZUn1vcjz3KKzuGH0WyYqdatVU48fj",
   },
 ];

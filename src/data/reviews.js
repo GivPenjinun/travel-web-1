@@ -5,7 +5,7 @@ export const reviews = [
     details:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quas voluptate officiis mollitia? Repellat nisi architecto inventore, eveniet, nesciunt animi quis rerum, voluptatibus quibusdam aspernatur exercitationem pariatur magnam voluptate officiis.",
     rating: 5,
-    image: "https://cdn.pic.in.th/file/picinth/travel1.jpeg",
+    image: "https://drive.google.com/uc?id=1Y8YuAEcwTGlbqrzn4u5QDh-eWa1LWoaW",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const reviews = [
     details:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quas voluptate officiis mollitia? Repellat nisi architecto inventore, eveniet, nesciunt animi quis rerum, voluptatibus quibusdam aspernatur exercitationem pariatur magnam voluptate officiis.",
     rating: 4,
-    image: "https://cdn.pic.in.th/file/picinth/travel1.jpeg",
+    image: "https://drive.google.com/uc?id=18RoBn4Tif3lGPk4tr0KLGJbL0BswDAj9",
   },
   {
     id: 3,
@@ -21,6 +21,6 @@ export const reviews = [
     details:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quas voluptate officiis mollitia? Repellat nisi architecto inventore, eveniet, nesciunt animi quis rerum, voluptatibus quibusdam aspernatur exercitationem pariatur magnam voluptate officiis.",
     rating: 3,
-    image: "https://cdn.pic.in.th/file/picinth/travel1.jpeg",
+    image: "https://drive.google.com/uc?id=1xzfkzNSxr4awD85vCPLMMcv-13TzwLNr",
   },
 ];

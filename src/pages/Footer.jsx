@@ -38,7 +38,11 @@ function Footer() {
             <a href="#">Tiktok</a>
           </div>
         </div>
-        <div className="credit">Credit</div>
+        <div className="credit">
+          <a href="http://www.freepik.com">
+            Thank you for Images Designed by Freepik
+          </a>
+        </div>
       </section>
     </>
   );
